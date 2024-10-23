@@ -1,1 +1,48 @@
-=============================DAY-1=====================================
+=============================Basic-Commands=====================================
+> mkdir <dir-name> (to create directory)
+> touch <file-name> (to create file)
+> cd <dir-name> (to go inside dir)
+> ll (to check the long list of files and directories
+> ls (to heck the list of files and directories)
+> pwd (to check the present working directory)
+> rmdir <dir-name> (to remove empty dir)
+> rm-rf <dir-name> (to remove non-empty dir)
+> rm -f <file-name> (to remove file)
+> cp <file-name> <dir-name> (to copy file)
+> mv <file-name> <dir-name> (to move file)
+> mv <old-file-name> <new-file-name> (to rename file or dir)
+> echo $? (to check the status of last command)
+> echo "hello world" (echo is used to print)
+> echo >> (it is append)
+> echo > (it is override)
+> echo "hello" >> <file-name>
+> echo "hello" > <file-name>
+> chmod (to change permissions)
+> chmod 777 <file/dir-name> 
+> chown (to change owner)
+> chown <user-name> <file/dir-name> 
+> chgrp (to change group)
+> chgrp <group-name> <file/dir-name> 
+> chown <user-name>:<group-name> <file/dir-name> (to change owner and group)
+> chown <user-name>:<group-name> <file/dir-name> -R (to change owner and group recursively)
+
+================User and Group Management=============================
+> useradd <user-name> (to add user)
+> passwd <user-name> (to assign password to user)
+> echo "password" | passwd --stdin <user-name> (to assign passwd without retype)
+> id <user-name> (to check user exist or not)
+> id -u <user-name> (to check the id of user)
+> cat /etc/passwd (user related file)
+> ll /home (user home directory)
+> useradd -u 2500 <user-name> (to assign id to user manually)
+> groupadd <group-name> (to create group)
+> useradd -G <group-name> -c "any comment" <user-name> (to add user in the group and to give any comment)
+> useradd -s /sbin/nologin <user-name> (don't allow login)
+> usermod -s /bin/bash <user-name> (to allow login>
+> gpasswd -d <user-name> <group-name> (to delete user from group>
+> groupdel <group-name> (to delete group)
+> userdel <user-name> (to remove user)
+> rm -rf /home/<user-name> (to delete user dir)
+> userdel -r <user-name> (to remove user nad it's home dir)
+
+

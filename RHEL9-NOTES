@@ -17,6 +17,13 @@
 > echo > (it is override)
 > echo "hello" >> <file-name>
 > echo "hello" > <file-name>
+> whoami (to check current user)
+> whereis (location of file)
+> wc -l (length of document)
+> wc -w (total words of file)
+> hostname (to check hostname)
+> hostnamectl set-hostname <vm101> (to set hostname)
+> bash (to implement hostname)
 > chmod (to change permissions)
 > chmod 777 <file/dir-name> 
 > chown (to change owner)
@@ -25,6 +32,7 @@
 > chgrp <group-name> <file/dir-name> 
 > chown <user-name>:<group-name> <file/dir-name> (to change owner and group)
 > chown <user-name>:<group-name> <file/dir-name> -R (to change owner and group recursively)
+
 
 ================User and Group Management=============================
 > useradd <user-name> (to add user)
@@ -44,5 +52,56 @@
 > userdel <user-name> (to remove user)
 > rm -rf /home/<user-name> (to delete user dir)
 > userdel -r <user-name> (to remove user nad it's home dir)
+
+=======VIM EDITOR=======
+VIM is a file editor in Linux.
+Commands for VIM:
+> yy (to copy)
+> dd (to delete)
+> w (beggining of next word)
+> e (end of current word)
+> $ (end of line)
+> x (delete letter)
+> cc (delete text line + insert mode)
+> o (insert + next line)
+> shift+g (end of file)
+> gg (start of file)
+> shift+m (middle of screen)
+:set number(to set numbers)
+:11 (to go to line no 11)
+:%s/oldword/newword/g (to replace old word with new word)
+:wq (to save and quit)
+
+======yum commands=========
+> yum or dnf (to install update and remove packages)
+> rpm -qa (to query any package
+> yum -y update (to update)
+> yum -y install <any package name> (to install package)
+> rpm -qa tree (to query tree package)
+yum -y remove <package-name> (to remove any package)
+
+=========crontab===========
+crontab is used to schedule jobs.
+syntax for cronjob.
+* * * * * <command>
+min hour date month week command
+> crontab -e
+12 10 30 10 0 mkdir /root/my-dir (to create a schedule directory)
+:wq
+> crontab -l (to check scheduled jobs)
+> crontab -r (to remove scheduled jobs)
+> crontab -r -u <user-name> (to remove jpbs of local users)
+> crontab -e (to edit crontab file for root)
+> crontab -e -u <username> (to edit file for local user)
+
+=======Link management=======
+> ln -s /var/log/secure secure (to create link)
+> cat secure
+> unlink secure (to remove link)
+
+
+
+
+
 
 
